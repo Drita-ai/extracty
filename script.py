@@ -32,7 +32,7 @@ def sqlite_data_extractor(table_name, archive_path, output_format='json'):
     }
 
     # Output file name
-    output_filename = 'a.json'
+    output_filename = 'sqlite_extracted_data.json'
 
     # Writing the data to a JSON file
     if output_format == 'json':
