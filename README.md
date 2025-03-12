@@ -8,4 +8,4 @@ To run the script, use:
 python3 script.py --file /path/to/cyd/folder (cyd/X/username)
 ```
 
-## Change the table_name in sqlite_data_extractor() to get it's respective json file
+Change the **table_name** in **sqlite_data_extractor()** to get it's respective json file
