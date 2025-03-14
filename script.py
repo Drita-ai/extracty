@@ -48,27 +48,26 @@ def sqlite_data_extractor(table_name, archive_path, output_format='json'):
 # Function to extract html's data
 def html_data_extractor(archive_path):
     # html files path
-    # html_file_path = os.path.join(archive_path, "Archived Tweets") 
+    html_file_path = os.path.join(archive_path, "Archived Tweets") 
 
-    # onlyfiles = [f for f in listdir(html_file_path) if isfile(join(html_file_path, f))]
+    onlyfiles = [f for f in listdir(html_file_path) if isfile(join(html_file_path, f))]
 
-    # # Reading the html contents
-    # for html_file in onlyfiles:
-    #     tweet_file_path = os.path.join(html_file_path, html_file)
+    # Reading the html contents
+    for html_file in onlyfiles:
+        tweet_file_path = os.path.join(html_file_path, html_file)
 
-    #     # Storing the content of the file
-    #     content = ""
+        # Storing the content of the file
+        content = ""
 
-    #     with open(tweet_file_path) as sf:
-    #         for line in sf:
-    #             content += line
+        with open(tweet_file_path) as sf:
+            for line in sf:
+                content += line
         
-    #     soup = BeautifulSoup(content, "lxml")
+        soup = BeautifulSoup(content, "lxml")
 
     #     user_logo_src = soup.select_one('img.css-9pa8cd').get('src')
     #     user_name = soup.find('div', {'data-testid': 'User-Name'}).find('span').text 
     #     print(user_name)
-    pass
 
 
     
